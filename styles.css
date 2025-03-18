@@ -1,0 +1,230 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 50px 0 30px;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Book Showcase Styles */
+.book-showcase {
+    padding: 20px 0;
+}
+
+.book-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-btn.active {
+    background-color: #2575fc;
+    color: white;
+    border-color: #2575fc;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.book-card:hover .book-image img {
+    transform: scale(1.05);
+}
+
+.book-category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.book-info {
+    padding: 20px;
+}
+
+.book-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.book-author {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.book-price {
+    font-weight: 700;
+    color: #2575fc;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.book-rating {
+    color: #ffa41b;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+.book-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-actions button {
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.book-actions button:hover {
+    background-color: #1a66e0;
+}
+
+.book-actions .wishlist-btn {
+    background-color: transparent;
+    color: #2575fc;
+    border: 1px solid #2575fc;
+}
+
+.book-actions .wishlist-btn:hover {
+    background-color: #f0f5ff;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+    color: #666;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .books-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    header {
+        padding: 30px 0 20px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .books-container {
+        grid-template-columns: 1fr;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .book-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}

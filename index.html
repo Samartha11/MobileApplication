@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Book Collection</h1>
+            <p>Discover amazing books to read</p>
+        </header>
+
+        <section class="book-showcase">
+            <div class="book-filters">
+                <button class="filter-btn active" data-filter="all">All Books</button>
+                <button class="filter-btn" data-filter="fiction">Fiction</button>
+                <button class="filter-btn" data-filter="non-fiction">Non-Fiction</button>
+                <button class="filter-btn" data-filter="classics">Classics</button>
+            </div>
+
+            <div class="books-container" id="books-container">
+                <!-- Books will be added here by JavaScript -->
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 My Book Collection</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
