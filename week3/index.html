@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFusion - Your Personal Fitness Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>FitFusion</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Fitness Journey</h1>
+            <p>Personalized workouts, nutrition tracking, and community support - all in one app.</p>
+            <div class="cta-buttons">
+                <a href="#download" class="btn primary-btn">Download Now</a>
+                <a href="#features" class="btn secondary-btn">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Homeworkout.jpg" alt="FitFusion App Preview">
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Why Choose FitFusion?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <h3>Personalized Workouts</h3>
+                <p>AI-driven workout plans tailored to your goals, fitness level, and available equipment.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Nutrition Tracking</h3>
+                <p>Track meals, count macros, and get personalized nutrition advice based on your goals.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Community Support</h3>
+                <p>Connect with like-minded fitness enthusiasts, share progress, and stay motivated.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Progress Tracking</h3>
+                <p>Monitor your improvements with detailed analytics and milestone celebrations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-preview">
+        <div class="preview-content">
+            <h2>Experience the FitFusion Difference</h2>
+            <p>Our intuitive interface makes fitness tracking simple and enjoyable. Get started in minutes and see results in weeks.</p>
+            <ul class="preview-list">
+                <li><i class="fas fa-check"></i> Easy-to-use interface</li>
+                <li><i class="fas fa-check"></i> Real-time feedback</li>
+                <li><i class="fas fa-check"></i> Offline workout access</li>
+                <li><i class="fas fa-check"></i> Integration with fitness wearables</li>
+            </ul>
+        </div>
+        <div class="preview-gallery">
+            <div class="gallery-item active">
+                <img src="workout.jpeg" alt="App Screenshot 1">
+            </div>
+            <div class="gallery-item">
+                <img src="workout1.jpeg" alt="App Screenshot 2">
+            </div>
+            <div class="gallery-item">
+                <img src="wokrout3.jpeg" alt="App Screenshot 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p>"FitFusion completely changed my approach to fitness. The personalized workouts fit perfectly into my busy schedule, and I've seen more progress in 3 months than I did in a year at the gym!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="review.jpg" alt="User Avatar">
+                    <div>
+                        <h4>Sarah Johnson</h4>
+                        <p>Lost 15lbs in 3 months</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p>"As a fitness trainer, I recommend FitFusion to all my clients. The nutrition tracking is comprehensive, and the community support keeps everyone motivated between sessions."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="review1.jpg" alt="User Avatar">
+                    <div>
+                        <h4>Michael Torres</h4>
+                        <p>Fitness Coach</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-text">
+                    <p>"I travel frequently for work, and FitFusion makes it easy to stay on track wherever I am. The offline workout feature is a game-changer for hotel workouts!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="review2.jpg" alt="User Avatar">
+                    <div>
+                        <h4>Alex Rivera</h4>
+                        <p>Business Traveler</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Choose Your Plan</h2>
+        <div class="pricing-container">
+            <div class="pricing-plan">
+                <h3>Basic</h3>
+                <div class="price">
+                    <span class="dollar">$</span>
+                    <span class="amount">0</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="plan-features">
+                    <li>Basic workout library</li>
+                    <li>Basic nutrition tracking</li>
+                    <li>Progress tracking</li>
+                    <li>Community access</li>
+                </ul>
+                <a href="#download" class="btn plan-btn">Get Started</a>
+            </div>
+            <div class="pricing-plan popular">
+                <div class="popular-tag">Most Popular</div>
+                <h3>Premium</h3>
+                <div class="price">
+                    <span class="dollar">$</span>
+                    <span class="amount">9.99</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="plan-features">
+                    <li>Full workout library</li>
+                    <li>Advanced nutrition tracking</li>
+                    <li>Personalized AI workout plans</li>
+                    <li>Wearable integration</li>
+                    <li>Priority support</li>
+                </ul>
+                <a href="#download" class="btn plan-btn">Get Premium</a>
+            </div>
+            <div class="pricing-plan">
+                <h3>Family</h3>
+                <div class="price">
+                    <span class="dollar">$</span>
+                    <span class="amount">19.99</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="plan-features">
+                    <li>All Premium features</li>
+                    <li>Up to 5 family members</li>
+                    <li>Shared goals & challenges</li>
+                    <li>Family progress dashboard</li>
+                    <li>24/7 priority support</li>
+                </ul>
+                <a href="#download" class="btn plan-btn">Get Family Plan</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2>Download FitFusion Today</h2>
+        <p>Start your fitness journey with FitFusion. Available on iOS and Android.</p>
+        <div class="download-buttons">
+            <a href="#" class="download-btn">
+                <i class="fab fa-apple"></i>
+                <div>
+                    <span>Download on the</span>
+                    <span class="store">App Store</span>
+                </div>
+            </a>
+            <a href="#" class="download-btn">
+                <i class="fab fa-google-play"></i>
+                <div>
+                    <span>Get it on</span>
+                    <span class="store">Google Play</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>FitFusion</h2>
+                <p>Your Personal Fitness Journey</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Fitness Guides</a></li>
+                        <li><a href="#">Nutrition Tips</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h3>Stay Updated</h3>
+                    <form>
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FitFusion. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
